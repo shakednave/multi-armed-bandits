@@ -65,5 +65,11 @@ if __name__ == '__main__':
   fig.show()
 
   # we expect E(Rewards) --> average(rewards_ptrobs*reward)
+  print("expected vs. real cum rewards")
   print(f"Average Reward from Machines: {cum_rewards[-1]}")
   print(f"Real Average Rewards: {np.mean([a*b for a,b in zip(reward_probabilities,actual_rewards)])}")
+
+  # envirnment real rewards vs. agent asessment
+  print("envirnment real rewards vs. agent asessment")
+  print(f"Environment Reward Probabilities : {test_env.reward_probabilities}")
+  print(f"Random Agent Action Values : {random_agent.q_values}")
