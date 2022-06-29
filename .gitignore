@@ -131,3 +131,5 @@ dmypy.json
 # project files
 .imi
 .xml
+
+.idea/
