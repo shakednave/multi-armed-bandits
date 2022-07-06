@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from mab_implementation.static_environments.environments import Environment
+from mab_implementation.static_environments.environment import Environment
 
 
 class GreedyAgent():
